@@ -1,22 +1,18 @@
 package cc;
 import java.util.Scanner;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 
 public class Main {
 	
-	static Scanner x;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args){
+		SwingUtilities.invokeLater(() -> new CurrencyGUI());
 		
-		System.out.println("Here are the different currencies you can convert:\n"
-				+ "1. USD \n2. CAD \n3. EUR");
-		
-		x = new Scanner(System.in);
-		int y = x.nextInt();
-		
-		//use exchange rate api
-		
-
 	}
 
 }
+
